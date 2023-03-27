@@ -1,0 +1,103 @@
+h1{
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.quote{
+    color: whitesmoke;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eb5f02;
+}
+
+.blog-body{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.blog-img{
+    margin-top: 50px;
+    width: 500px;
+    height: 250px;
+}
+
+.blog-post{
+    font-size: auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px;
+}
+
+.blogs{
+    border-bottom: 2px solid lightgrey;
+}
+.home-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img{
+    margin-top: 50px;
+    width: 60%;
+    height: 90%;
+}
+
+.img1{
+    height: 10%;
+    width: 100%;
+}
+
+.intro{
+    font-size: auto;
+    padding-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-nav  li a:hover {
+    color: #BAD7E9 !important;
+}
+
+/* .footer-padding {
+	padding-bottom: 60px;
+} */
+
+body{
+    background-color: #FFFFCC;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+	position:static;
+	text-align: center;
+	bottom: 0;
+	background-color: #eb5f02;
+}
+
+.footer p {
+    color: whitesmoke;
+}
