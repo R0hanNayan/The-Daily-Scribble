@@ -14,7 +14,10 @@
     <h1>Posts</h1>
         <% newPosts.forEach(post => { %>
             <div class="blog-body">
-                <img class="blog-img" src="<%=post.postImg%>" alt="photo">
+                <div>
+                    <img class="blog-img" src="<%=post.postImg%>" alt="photo">
+                </div>
+                
                 <div class="blog-post">
                     <h3><%=post.title%></h3>
                     <p class="blogs"><%=post.content.substring(0, 150) + "..."%><a href="/posts/<%=post._id%>">Read More</a></p>
