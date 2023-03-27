@@ -16,8 +16,8 @@
             <div class="blog-body">
                 <img class="blog-img" src="<%=post.postImg%>" alt="photo">
                 <div class="blog-post">
-                    <h3><%=post.postTitle%></h3>
-                    <p class="blogs"><%=post.postBody.substring(0, 150) + "..."%><a href="/posts/<%=post.postTitle%>">Read More</a></p>
+                    <h3><%=post.title%></h3>
+                    <p class="blogs"><%=post.content.substring(0, 150) + "..."%><a href="/posts/<%=post._id%>">Read More</a></p>
                 </div>
             </div>
         <% }); %>
