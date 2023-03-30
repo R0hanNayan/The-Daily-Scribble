@@ -1,5 +1,4 @@
 //jshint esversion:6
-require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -9,8 +8,7 @@ const homeStartingContent = "Welcome to The Daily Scribble, where words come ali
 const aboutContent = "Hello there! My name is Rohan Nayan and I am a Computer Science student at VIT Vellore. I am an avid gamer, music lover, and coding enthusiast. I also enjoy playing football in my free time. I created The Daily Scribble as a platform to share my thoughts and ideas with others. Through this blog, I hope to provide readers with a space to explore their creativity, learn something new every day, and connect with like-minded individuals. I am passionate about technology and its applications in our daily lives, and I believe that writing can be a powerful tool to inspire, inform, and transform. Thank you for visiting The Daily Scribble, and I hope you enjoy your time here!";
 const contactContent = "If you have any questions or comments, please feel free to reach out to me! You can contact me at rohannayan405@gmail.com. I am also active on LinkedIn, Twitter(@nayan_rohan), and GitHub, where you can connect with me and stay updated on my latest projects and interests. Don't hesitate to drop me a message or follow me on these platforms - I would love to hear from you and connect with like-minded individuals. Thank you for your interest in my work, and I look forward to hearing from you soon!"
 const app = express();
-const password = process.env.Mongo_Pass;
-const connection = mongoose.createConnection(`mongodb+srv://rohannayan405:${password}@cluster0.mlrfqzu.mongodb.net/blogDB`)
+const connection = mongoose.createConnection(`mongodb+srv://rohannayan405:rohannayan405@cluster0.mlrfqzu.mongodb.net/blogDB`)
 
 
 app.set('view engine', 'ejs');
@@ -26,7 +24,7 @@ const postSchema = new mongoose.Schema({
 
 const Post = connection.model("Post", postSchema);
 
-const appID = process.env.API_KEY;
+const appID = "VVNdfqTZCwEWhLK3ndRLr0lYlUAC06lzsnXiS41Xaqs";
 
 //Home Page
 app.get("/", async function(req,res){
