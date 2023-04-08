@@ -102,6 +102,20 @@ body{
     margin-right: 20%;
 }
 
+.postContent{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.author{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 100px;
+    margin-top: 20px;
+    text-align: right;
+}
+
 .footer {
     padding-top: 10px;
     padding-bottom: 10px;

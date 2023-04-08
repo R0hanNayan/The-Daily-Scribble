@@ -19,6 +19,7 @@ app.use(express.static("public"));
 const postSchema = new mongoose.Schema({
   title: String,
   content: String,
+  name: String,
   postImg: String
 })
 
@@ -55,6 +56,7 @@ app.post('/compose', async function(req,res){
   const post = new Post({
     title: req.body.newContentTitle,
     content: req.body.newContent,
+    name: req.body.authorName,
     postImg: img
   });
   post.save().then(function(){
@@ -85,7 +87,7 @@ async function getQuote(){
 app.get('/posts/:postID', function(req, res){
   const reqPostID = req.params.postID;
   Post.findOne({_id: reqPostID}).then(post=>{
-    res.render("post", {postTitle: post.title, postBody: post.content});
+    res.render("post", {postTitle: post.title, postBody: post.content, postAuthor: post.name});
   })
 });
 
