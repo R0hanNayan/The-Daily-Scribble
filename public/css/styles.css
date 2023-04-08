@@ -92,12 +92,14 @@ h1{
     color: #BAD7E9 !important;
 }
 
-/* .footer-padding {
-	padding-bottom: 60px;
-} */
 
 body{
     background-color: #FFFFCC;
+}
+
+.post{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .footer {
