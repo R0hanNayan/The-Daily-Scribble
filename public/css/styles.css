@@ -1,82 +1,9 @@
-.aboutMe{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
-
-.contactMe{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-h1{
-    padding-top: 50px;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.quote{
-    color: whitesmoke;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #eb5f02;
-}
-
-.blog-body{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-.blog-img{
-    margin-top: 50px;
-    width: 500px;
-    height: 250px;
-}
-
-.blog-post{
-    font-size: auto;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 100px;
-}
-
-.blogs{
-    border-bottom: 2px solid lightgrey;
-}
-.home-container{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-img{
-    margin-top: 50px;
-    width: 60%;
-    height: 90%;
-}
-
-.img1{
-    height: 10%;
+.container{
     width: 100%;
-    margin-bottom: 15px;
 }
-
-.intro{
-    font-size: auto;
-    padding-left: 50px;
-    font-family: 'Times New Roman', Times, serif;
+body{
+    background-color: #FFFFCC;
 }
-
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -92,22 +19,85 @@ h1{
     color: #BAD7E9 !important;
 }
 
+.home-img{
+    display: none;
+}
 
-body{
-    background-color: #FFFFCC;
+.img1{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+
+.intro{
+    width: 100%;
+}
+
+.intro p{
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quote{
+    width: 100%;
+    color: whitesmoke;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eb5f02;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blog-img{
+    width: 100%;
+    height: 10%;
+}
+
+.blog-post{
+    padding-bottom: 10px;
+    font-size: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position:static;
+    text-align: center;
+    bottom: 0;
+    background-color: #eb5f02;
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.post-Start{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .post{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
 }
 
 .postContent{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-top: 30px;
 }
 
 .author{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     font-weight: bold;
     font-style: italic;
@@ -116,15 +106,105 @@ body{
     text-align: right;
 }
 
-.footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-	position:static;
-	text-align: center;
-	bottom: 0;
-	background-color: #eb5f02;
+.aboutMe{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
-.footer p {
-    color: whitesmoke;
+
+.contactMe{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    h1{
+        padding-top: 50px;
+    }
+
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .quote{
+        color: whitesmoke;
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #eb5f02;
+    }
+    
+    .blog-body{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    
+    .blog-img{
+        margin-top: 50px;
+        width: 500px;
+        height: 250px;
+    }
+    
+    .blog-post{
+        font-size: auto;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 100px;
+    }
+    
+    .blogs{
+        border-bottom: 2px solid lightgrey;
+    }
+    .home-container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home-img{
+        display: block;
+        margin-top: 50px;
+        width: 60%;
+        height: 90%;
+    }
+    
+    .img1{
+        height: 5%;
+    }
+    
+    .intro{
+        font-size: auto;
+        padding-left: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .intro p{
+        font-size: 25px;
+    }
+    
+    .post{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .postContent{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .author{
+        font-size: 15px;
+        font-weight: bold;
+        font-style: italic;
+        margin-right: 100px;
+        margin-top: 20px;
+        text-align: right;
+    }
 }
