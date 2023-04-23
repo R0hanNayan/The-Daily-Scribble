@@ -4,13 +4,17 @@
 body{
     background-color: #FFFFCC;
 }
+
+.navbar-brand{
+    font-size: 26px;
+}
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 20px;
     letter-spacing: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -26,7 +30,7 @@ body{
 .img1{
     margin: auto;
     display: block;
-    width: 100%;
+    width: 90%;
     height: 10%;
 }
 
@@ -35,6 +39,7 @@ body{
 }
 
 .intro p{
+    text-align: center;
     padding-top: 15px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -58,13 +63,15 @@ h1{
 }
 
 .blog-img{
-    width: 100%;
+    margin: auto;
+    display: block;
+    width: 90%;
     height: 10%;
 }
 
 .blog-post{
     padding-bottom: 10px;
-    font-size: auto;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -87,12 +94,13 @@ h1{
 }
 
 .post{
-    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .postContent{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 30px;
 }
 
@@ -118,6 +126,13 @@ h1{
 }
 
 @media only screen and (min-width: 1000px) {
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .navbar {
+        font-size: 12px;
+    }
+
     h1{
         padding-top: 50px;
     }
@@ -125,17 +140,6 @@ h1{
     .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
-    }
-    
-    .quote{
-        color: whitesmoke;
-        margin-top: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-        background-color: #eb5f02;
     }
     
     .blog-body{
@@ -171,12 +175,14 @@ h1{
     .home-img{
         display: block;
         margin-top: 50px;
-        width: 60%;
-        height: 90%;
+        width: 50%;
+        height: 80%;
     }
     
     .img1{
-        height: 5%;
+        margin-left: 0;
+        width: 100%;
+        height: 450px;
     }
     
     .intro{
@@ -186,6 +192,7 @@ h1{
     }
 
     .intro p{
+        text-align: left;
         font-size: 25px;
     }
     
@@ -197,14 +204,5 @@ h1{
     .postContent{
         font-size: 20px;
         margin-top: 30px;
-    }
-    
-    .author{
-        font-size: 15px;
-        font-weight: bold;
-        font-style: italic;
-        margin-right: 100px;
-        margin-top: 20px;
-        text-align: right;
     }
 }
