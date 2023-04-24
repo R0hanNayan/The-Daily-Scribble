@@ -1,1 +1,1 @@
-Deployed on Cyclic: https://ochre-piglet-cap.cyclic.app/
+Deployed on Render: https://the-daily-scribble-udiv.onrender.com
